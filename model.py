@@ -8,7 +8,6 @@ import numpy as np
 
 # Step 1 - build_token_to_id_vocab
 def build_token_to_id_vocab(sentences, specials=('<pad>', '<bos>', '<eos>', '<unk>')):
-    # TODO: build a token-to-id dict with specials first, then corpus tokens in first-seen order.
     token_to_id = {}
     for i, special in enumerate(specials):
         token_to_id[special] = i
